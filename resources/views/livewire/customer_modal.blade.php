@@ -9,7 +9,8 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" wire:click="closeModal"></button>
         </div>
         <div class="modal-body">
-          <button class="btn btn-primary">Add Title</button>
+          {{-- <button class="btn btn-primary btn-sm mb-2">Add Title</button> --}}
+          <button type="button" class="btn btn-primary  mb-3" data-bs-toggle="modal" data-bs-target="#AddTitleModal">Add Title</button>
           <form action="">
             <select class="form-select" aria-label="Default select example" wire:model="title_id">
               <option selected>Silakan pilih title</option>

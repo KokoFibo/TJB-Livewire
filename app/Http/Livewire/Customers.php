@@ -134,6 +134,17 @@ class Customers extends Component
         $this->dispatchBrowserEvent('close-modal');
     }
 
+    // public function storeTitle()
+    // {
+
+    //     dd($this->nama);
+    //     Title::create();
+    //     session()->flash('message', 'New Customer Data Created Succesfully');
+    //     $this->resetInputFields();
+    //     //$this->resetValidation();
+    //     $this->dispatchBrowserEvent('close-modal');
+    // }
+
 
 
 

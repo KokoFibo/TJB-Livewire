@@ -1,6 +1,6 @@
 <div>
     @include('livewire.customer_modal')
-     {{-- @include('livewire.customer_delete')  --}}
+     @include('livewire.customer_title') 
    <section>
     <div class="container">
         <div class="row">
@@ -12,7 +12,7 @@
                     <div class="card-header">
                         <h3>Customers
                             <input type="search" wire:model="search" class="form-control float-end mx-2" style="width:230px" placeholder="search...">
-                            <button type="button" class="btn btn-primary float-end" data-bs-toggle="modal" data-bs-target="#AddNewCustomerModal">
+                            <button type="button" class="btn btn-primary float-end mt-2" data-bs-toggle="modal" data-bs-target="#AddNewCustomerModal">
                                 Add New Customer
                               </button>
                         </h3>
@@ -35,9 +35,11 @@
                                 @forelse ($customers as $customer)
                                 <tr> 
                                     <td>{{ $customer->title->nama}}</td>
-                                    <td>{{ $customer->name }}</td>
+                                    <td>{{ Str::headline($customer->name) }}</td>
+                                    {{-- <td>{{ $customer->name }}</td> --}}
                                     <td>{{ $customer->address }}</td>
-                                    <td>{{ $customer->city }}</td>
+                                    <td>{{ Str::headline($customer->city) }}</td>
+                                    {{-- <td>{{ $customer->city }}</td> --}}
                                     <td>{{ $customer->phone }}</td>
                                     <td>{{ $customer->mobile }}</td>
                                     <td>{{ $customer->email }}</td>
