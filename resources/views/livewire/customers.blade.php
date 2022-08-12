@@ -12,10 +12,8 @@
                     <div class="card-header">
                         <h3>Customers
                             <input type="search" wire:model="search" class="form-control float-end mx-2" style="width:230px" placeholder="search...">
-                            <button type="button" class="btn btn-primary float-end mt-2" data-bs-toggle="modal" data-bs-target="#AddNewCustomerModal">
-                                Add New Customer
-                              </button>
                         </h3>
+                        
                     </div>
                     <div class="card-body">
                         <table class="table table-striped table-hover">
@@ -28,7 +26,12 @@
                                     <th>Phone</th>
                                     <th>Mobile</th>
                                     <th>Email</th>
-                                    <th>Action</th>
+                                    {{-- <th>Action</th> --}}
+                                    <th>
+                                        <button type="button" class="btn btn-primary float-end btn-sm" data-bs-toggle="modal" data-bs-target="#AddNewCustomerModal">
+                                            Add
+                                          </button>
+                                    </th>
                                 </tr>
                             </thead>
                             <tbody>

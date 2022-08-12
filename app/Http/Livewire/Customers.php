@@ -28,7 +28,7 @@ class Customers extends Component
 
     public function resetInputFields()
     {
-        $this->id = '';
+        $this->title = '';
         $this->name = '';
         $this->address = '';
         $this->city = '';

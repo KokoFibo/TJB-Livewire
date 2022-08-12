@@ -2,6 +2,7 @@
 
 use App\Models\Customer;
 use App\Http\Livewire\Customers;
+use App\Http\Livewire\Hargaponds;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/pond/harga', Hargaponds::class);
 Route::get('/customers', Customers::class);
 Route::get('/', function () {
     return view('welcome');
