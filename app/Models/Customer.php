@@ -26,4 +26,8 @@ class Customer extends Model
     {
         return $this->belongsTo(Title::class);
     }
+    public function notapond()
+    {
+        return $this->hasMany(Notapond::class);
+    }
 }

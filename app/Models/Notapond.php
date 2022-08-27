@@ -5,13 +5,18 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Hargapond extends Model
+class Notapond extends Model
 {
     use HasFactory;
+    protected $table = 'notapond';
     protected $fillable = [
-        'label_harga',
-        'harga'
+        'nopond',
+        'customer_id',
     ];
+    public function customer()
+    {
+        return $this->belongsTo(Customer::class);
+    }
     public function notaponditem()
     {
         return $this->hasMany(Notaponditem::class);

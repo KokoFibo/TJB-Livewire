@@ -27,7 +27,7 @@
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Pond </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Nota Pond</a></li>
+            <li><a class="dropdown-item" href="/pond/notapond">Nota Pond</a></li>
             <li><a class="dropdown-item" href="/pond/harga">Harga Pond</a></li>
             <li><a class="dropdown-item" href="#">Tanda Terima Pond</a></li>
             <li><hr class="dropdown-divider" /></li>
@@ -56,7 +56,8 @@
           $('#DeleteCustomerModal').modal('hide'); 
           $('#AddModal').modal('hide'); 
           $('#DeleteModal').modal('hide'); 
-
+          $('#AddNotaPond').modal('hide'); 
+          
           
       })
       </script>
